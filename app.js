@@ -12,6 +12,6 @@ program
     Builders.buildModel(model)
 })
 
-module.export.run = (ARG)=>{
-    program.parse(ARG)
+module.export = (ARGS){
+    program.parse(ARGS)
 }
