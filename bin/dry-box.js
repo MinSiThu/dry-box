@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-
-require('../app').cli(process.argv);
+let program = require("../app");
+program.run(process.argv)

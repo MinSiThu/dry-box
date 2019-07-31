@@ -9,7 +9,9 @@ program
 program
 .command("model <model>")
 .action(function(model){
-    Builders.buildModel(model);
+    Builders.buildModel(model)
 })
 
-module.export = program;
+module.export.run = (ARG)=>{
+    program.parse(ARG)
+}

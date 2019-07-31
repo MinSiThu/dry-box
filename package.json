@@ -1,11 +1,11 @@
 {
   "name": "dry-box",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "cli for building models, curd and services easily",
   "main": "app.js",
   "bin": {
-    "@minsithu/dry-box": "bin/dry-box",
-    "dry-box": "bin/dry-box"
+    "@minsithu/dry-box": "bin/dry-box.js",
+    "dry-box": "bin/dry-box.js"
   },
   "publishConfig": {
     "access": "public"
