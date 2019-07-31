@@ -1,0 +1,37 @@
+{
+  "name": "dry-box",
+  "version": "0.0.1",
+  "description": "cli for building models, curd and services easily",
+  "main": "app.js",
+  "bin": {
+    "@minsithu/dry-box": "bin/dry-box",
+    "dry-box": "bin/dry-box"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinSiThu/dry-box.git"
+  },
+  "keywords": [
+    "cli",
+    "DRY",
+    "models",
+    "crud",
+    "services"
+  ],
+  "author": "min si thu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MinSiThu/dry-box/issues"
+  },
+  "homepage": "https://github.com/MinSiThu/dry-box#readme",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "inquirer": "^6.5.0"
+  }
+}
