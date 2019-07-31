@@ -1,7 +1,7 @@
 let upperCase1stLetter = require("../utils/upperCaseFirstLetter");
 
 module.exports = function(name,props){
-    props = JSON.stringify(props)
+    props = JSON.stringify(props);
     return `
     let mongoose = require("mongoose");
     let ${name}Schema = new mongoose.Schema(${props})

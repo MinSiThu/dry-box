@@ -12,6 +12,6 @@ program
     Builders.buildModel(model)
 })
 
-module.export = (ARGS){
+module.export = (ARGS)=>{
     program.parse(ARGS)
 }

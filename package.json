@@ -1,8 +1,8 @@
 {
   "name": "dry-box",
-  "version": "0.0.9",
+  "version": "0.1.0-alpha",
   "description": "cli for building models, curd and services easily",
-  "main": "app.js",
+  "main": "./bin/cli",
   "bin": {
     "@minsithu/dry-box": "bin/cli",
     "dry-box": "bin/cli"

@@ -1,4 +1,16 @@
 #!/usr/bin/env node
+let program = require("commander");
+let toolInfo = require("./tool-info");
+let Builders = require("../builders");
 
-let program = require("../app");
-program(process.argv)
+program
+.version(toolInfo.version)
+.description(toolInfo.description)
+
+program
+.command("model <model>")
+.action(function(model){
+    Builders.buildModel(model)
+})
+
+program.parse(process.argv)
