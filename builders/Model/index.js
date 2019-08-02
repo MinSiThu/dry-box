@@ -1,5 +1,6 @@
 let {prompt} = require("inquirer");
 let writter = require("../utils/writter");
+let path = require("path");
 let compileTemplate = require("./template");
 
 class Model{
@@ -47,8 +48,6 @@ class Model{
                 default:state.default,
             }
         })
-        let template = compileTemplate(this.name,this.model);
-        await writter.write(this.name,template)
     }
 
     async build(){
@@ -67,6 +66,17 @@ class Model{
         console.log("\n")
         console.log("Model Starts Building -----------------------------------------------------------------");
         this.compile()
+
+        let dataModel = "module.exports = "+JSON.stringify({
+            name:this.name,
+            json:this.model,
+        },null,4)
+        
+        let THAT = this;
+        await writter.copyWholeDir(path.join(__dirname,"modelTemplate"),path.join("models",this.name),
+        async function(){
+            await writter.write(path.join("models",THAT.name,"dataModel"),dataModel)
+        });        
     }
 }
 

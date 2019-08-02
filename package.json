@@ -1,6 +1,6 @@
 {
   "name": "dry-box",
-  "version": "0.1.0-alpha",
+  "version": "0.1.1-alpha",
   "description": "cli for building models, curd and services easily",
   "main": "./bin/cli",
   "bin": {
@@ -32,6 +32,7 @@
   "homepage": "https://github.com/MinSiThu/dry-box#readme",
   "dependencies": {
     "commander": "^2.20.0",
+    "copy-dir": "^1.1.0",
     "inquirer": "^6.5.0"
   }
 }

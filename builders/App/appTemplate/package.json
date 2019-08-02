@@ -1,0 +1,23 @@
+{
+  "name": "dry-box-template",
+  "version": "1.0.0",
+  "description": "app template produced by dry-box cli",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "mongoose":"*"
+  },
+  "keywords": [
+    "dry-box",
+    "cli",
+    "model",
+    "service",
+    "controller",
+    "don't-repeat-yourself"
+  ],
+  "author": "min si thu",
+  "license": "ISC"
+}

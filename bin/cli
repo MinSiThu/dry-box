@@ -13,4 +13,10 @@ program
     Builders.buildModel(model)
 })
 
+program
+.command("app <app>")
+.action(function(app){
+    Builders.buildApp(app);
+})
+
 program.parse(process.argv)
