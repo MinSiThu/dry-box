@@ -12,4 +12,7 @@ dry-box app <App-name>
 
 //for model
 dry-box model <Model-name>
+
+//for service
+dry-box service <Service-name>
 ```

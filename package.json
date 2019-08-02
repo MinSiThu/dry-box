@@ -1,6 +1,6 @@
 {
   "name": "dry-box",
-  "version": "0.1.1-alpha",
+  "version": "0.1.3-alpha",
   "description": "cli for building models, curd and services easily",
   "main": "./bin/cli",
   "bin": {

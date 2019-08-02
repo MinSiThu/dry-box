@@ -19,4 +19,10 @@ program
     Builders.buildApp(app);
 })
 
+program
+.command("service <service>")
+.action((service)=>{
+    Builders.buildService(service);
+})
+
 program.parse(process.argv)

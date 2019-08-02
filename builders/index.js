@@ -1,5 +1,6 @@
 let ModelBuilder = require("./Model");
 let AppBuilder = require("./App");
+let ServiceBuilder = require("./Service");
 
 class Builder{
     buildModel(modelName){
@@ -8,6 +9,10 @@ class Builder{
 
     buildApp(appName){
         new AppBuilder(appName).build();
+    }
+
+    buildService(serviceName){
+        new ServiceBuilder(serviceName).build();
     }
 }
 
